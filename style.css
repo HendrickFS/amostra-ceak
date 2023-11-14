@@ -19,16 +19,23 @@ body{
     border-style: solid;
     border-width: 2px;
     border-color: #B3323B;
-    min-width: 170px;
+    min-width: 190px;
     height: 1100px;
+    align-items: center;
 }
 
 .menu a{
     text-decoration: none;
-    margin-left: 30px;
+    margin-left: 5px;
     font-size: larger;
     color: #CD4C55;
     font-weight: 700;
+}
+
+.menu a:hover{
+    animation: rainbow 3s linear;
+    animation-iteration-count: infinite;
+    scale: 1.1;
 }
 
 .logo{
