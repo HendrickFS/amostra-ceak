@@ -21,6 +21,7 @@
         border-right-style: solid;
         border-right-width: 2px;
         border-color: #B3323B;
+        padding-right: 5px;
     }
     
     .logo img{
@@ -143,6 +144,7 @@
         background-color: #EEC3C6;
         animation: rainbow 3s linear infinite;
     }
+
     
     .produtos{
         display: flex;
