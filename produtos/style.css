@@ -121,7 +121,6 @@
     .descricao h2{
         font-family:'Courier New', Courier, monospace;
         font-weight: 700;
-        font-size: xx-large;
         color: #B3323B ;
     }
 
@@ -144,7 +143,6 @@
         background-color: #EEC3C6;
         animation: rainbow 3s linear infinite;
     }
-
     
     .produtos{
         display: flex;
@@ -257,8 +255,7 @@
         border-width: 2px;
         border-color: #B3323B;
         border-radius: 20px;
-        max-width: 60%;
-        min-width: 60%;
+        max-width: 45%;
     }
     
     .produto img{
@@ -273,7 +270,6 @@
     .descricao h2{
         font-family:'Courier New', Courier, monospace;
         font-weight: 700;
-        font-size: xx-large;
         color: #B3323B ;
     }
 
