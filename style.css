@@ -3,106 +3,205 @@
 /* #EEC3C6 */
 /* #B3323B */
 
-
-body{
-    margin: 0;
-    height: 100%;
-    background-color: #F8E7E8;
-    display: flex;
-    flex-direction: row;
+@media only screen and (max-device-width: 400px) {
+    body{
+        margin: 0;
+        height: 100%;
+        background-color: #F8E7E8;
+        display: flex;
+        flex-direction: column;
+    }
+    .logo{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        border-right-style: solid;
+        border-right-width: 2px;
+        border-color: #B3323B;
+        padding-right: 5px;
+    }
+    
+    .logo img{
+        width: 60px;
+        height: 50px;
+        margin-top: 10px;
+    }
+    
+    .logo h2{
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 700;
+        font-size: xx-large;
+        color: rgb(104, 18, 18);
+    }
+    .menu{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        border-bottom-style: solid;
+        border-width: 2px;
+        border-color: #B3323B;
+        min-width: 100%;
+        max-width: 100%;
+        align-items: center;
+    }
+    .menu a{
+        text-decoration: none;
+        margin-left: 5px;
+        font-size: larger;
+        color: #CD4C55;
+        font-weight: 700;
+    }
+    
+    .menu a:hover{
+        animation: rainbow 3s linear;
+        animation-iteration-count: infinite;
+        scale: 1.1;
+    }
+    .conteudo{
+        margin-left: 20px;
+    }
+    
+    .conteudo h1{
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 700;
+        font-size: xx-large;
+        color: #B3323B ;
+    }
+    
+    .conteudo p{
+        color: #CD4C55 ;
+    }
+    
+    .conteudo strong{
+        animation: rainbow 3s linear;
+        animation-iteration-count: infinite;
+    }
+    .tema{
+        display: flex;
+        flex-direction: row;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 20px;
+        border-color: #B3323B;
+        margin-top: 30px;
+    }
+    .tema img{
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .descricao{
+        margin-left: 20px;
+        min-width: 900px;
+    }
+    .descricao h2{
+        color:#B3323B;
+    }
+    
 }
 
-.menu{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #B3323B;
-    min-width: 190px;
-    height: 1500px;
-    align-items: center;
-}
 
-.menu a{
-    text-decoration: none;
-    margin-left: 5px;
-    font-size: larger;
-    color: #CD4C55;
-    font-weight: 700;
-}
+@media only screen and (min-device-width: 400px) {
+    body{
+        margin: 0;
+        height: 100%;
+        background-color: #F8E7E8;
+        display: flex;
+        flex-direction: row;
+    }
 
-.menu a:hover{
-    animation: rainbow 3s linear;
-    animation-iteration-count: infinite;
-    scale: 1.1;
-}
+    .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #B3323B;
+        min-width: 190px;
+        height: 1500px;
+        align-items: center;
+    }
 
-.logo{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    border-color: #B3323B;
-}
+    .menu a{
+        text-decoration: none;
+        margin-left: 5px;
+        font-size: larger;
+        color: #CD4C55;
+        font-weight: 700;
+    }
 
-.logo img{
-    width: 60px;
-    height: 50px;
-    margin-top: 10px;
-}
+    .menu a:hover{
+        animation: rainbow 3s linear;
+        animation-iteration-count: infinite;
+        scale: 1.1;
+    }
 
-.logo h2{
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 700;
-    font-size: xx-large;
-    color: rgb(104, 18, 18);
-}
+    .logo{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        border-bottom-style: solid;
+        border-bottom-width: 2px;
+        border-color: #B3323B;
+    }
 
-.conteudo{
-    margin-left: 20px;
-}
+    .logo img{
+        width: 60px;
+        height: 50px;
+        margin-top: 10px;
+    }
 
-.conteudo h1{
-    font-family:'Courier New', Courier, monospace;
-    font-weight: 700;
-    font-size: xx-large;
-    color: #B3323B ;
-}
+    .logo h2{
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 700;
+        font-size: xx-large;
+        color: rgb(104, 18, 18);
+    }
 
-.conteudo p{
-    color: #CD4C55 ;
-}
+    .conteudo{
+        margin-left: 20px;
+    }
 
-.conteudo strong{
-    animation: rainbow 3s linear;
-    animation-iteration-count: infinite;
-}
+    .conteudo h1{
+        font-family:'Courier New', Courier, monospace;
+        font-weight: 700;
+        font-size: xx-large;
+        color: #B3323B ;
+    }
 
-.tema{
-    display: flex;
-    flex-direction: row;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 20px;
-    border-color: #B3323B;
-    margin-top: 30px;
-}
+    .conteudo p{
+        color: #CD4C55 ;
+    }
 
-.tema img{
-    width: 300px;
-    height: 200px;
-    border-radius: 20px;
-}
+    .conteudo strong{
+        animation: rainbow 3s linear;
+        animation-iteration-count: infinite;
+    }
 
-.descricao{
-    margin-left: 20px;
-    min-width: 900px;
-}
+    .tema{
+        display: flex;
+        flex-direction: row;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 20px;
+        border-color: #B3323B;
+        margin-top: 30px;
+    }
 
-.descricao h2{
-    color:#B3323B;
+    .tema img{
+        width: 300px;
+        height: 200px;
+        border-radius: 20px;
+    }
+
+    .descricao{
+        margin-left: 20px;
+        min-width: 900px;
+    }
+
+    .descricao h2{
+        color:#B3323B;
+    }
 }
 
 @keyframes rainbow{
